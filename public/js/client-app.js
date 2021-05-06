@@ -19,7 +19,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messagetwo.textContent = 'Loading...'
     messageOne.textContent =""
     console.log('location'+ location)
-    fetch(`http://localhost:3000/weather?address=${location}`).then((response)=>{
+    fetch(`/weather?address=${location}`).then((response)=>{
     response.json().then((data)=>{
     if(data.error){
         console.log('Unable to serach the lcoation, please provide valid location')

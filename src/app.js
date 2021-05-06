@@ -5,6 +5,7 @@ const geoCodeUtil = require('./w-utils')
 const request = require('request')
 
 const app = express();
+const port = process.env.PORT || 3000
 
 const pathDirectory = path.join(__dirname,'../public');
 const viewPath = path.join(__dirname,'../template/views')
@@ -99,6 +100,6 @@ app.get('help/*', (req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is running...')
 })
