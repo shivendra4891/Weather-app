@@ -29,16 +29,16 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        pageFrom:'i am from about page',
-        title:'about page kp',
-        author:'Shivendra'
+        pageFrom:'About page of Weather App',
+        title:'about page',
+        author:'Shiv'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title:'help page',
-        author:'Shivendra'
+        title:'help page for Weather App',
+        author:'Shiv'
     })
 })
 
