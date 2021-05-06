@@ -1,0 +1,41 @@
+body {
+    color:cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding:0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+footer {
+    background: beige;
+    padding: 16px;
+    margin-top: 20px;
+    border-top: 1px solid brown;
+}
+header {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+header a{
+    color: crimson;
+    margin-right: 16px;
+    font-family: cursive;
+    font-weight: 100;
+}
+
+img {
+    width: 50%;
+}
+
