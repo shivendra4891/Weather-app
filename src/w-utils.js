@@ -20,7 +20,7 @@ const getGeoCode = (address, callback) => {
 
 const forecast = (latitude, longitute, callback) =>{
    /// console.log(latitude)
-    const url = `http://api.weatherstack.com/current?access_key=8600c1d82326d82de7f56aee15575e28&query=${latitude},${longitute}&units=m`
+    const url = `http://api.weatherstack.com/current?access_key=8600c1d82326d82de7f56aee15575e28&query=${longitute},${latitude}&units=m`
     //console.log(url)
     request({ url, json: true }, (error, { body }) => {
         //console.log(response.body)
