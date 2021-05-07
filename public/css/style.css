@@ -1,5 +1,5 @@
 body {
-    color:rgb(97, 214, 132);
+    color:rgb(5, 77, 90);
     font-family: Arial, Helvetica, sans-serif;
     max-width: 500px;
     margin: 0 auto;
@@ -14,7 +14,7 @@ body {
     flex-grow: 1;
 }
 footer {
-    background: rgb(128, 117, 248);
+    background: rgb(110, 177, 253);
     padding: 16px;
     margin-top: 20px;
     border-top: 1px solid rgb(26, 9, 104);
