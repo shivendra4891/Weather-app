@@ -24,8 +24,8 @@ weatherForm.addEventListener('submit',(e)=>{
     if(data.error){
         console.log('Unable to serach the lcoation, please provide valid location')
     }
-        messageOne.textContent = 'Current Weather Forecast is :'+ data.forecast +' and the temperatureis : '+ data.temperature + 'of location'+ data.location
-        messagetwo.textContent = data.location
+        messageOne.textContent = 'Current Weather Forecast is :'+ data.forecast +' and the temperature is : '+ data.temperature + ' of location :' + data.address
+        messagetwo.textContent = ""
         console.log(data.forecast);
         console.log(data.temperature);
         console.log(data.address);

@@ -29,15 +29,15 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about',{
-        pageFrom:'About page of Weather App',
-        title:'about page',
+        pageFrom:'About page',
+        title:'About Weather App',
         author:'Shiv'
     })
 })
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title:'help page for Weather App',
+        title:'Help for Weather App',
         author:'Shiv'
     })
 })
@@ -46,7 +46,7 @@ app.get('/help',(req,res)=>{
 app.get('/weather',(req, res)=>{
     if(!req.query.address) {
         return res.send({
-            error: 'Please provide the address for knowing the weather'
+            error: 'Please provide the address for knowing the weather!'
         })
     }
     const address = req.query.address
